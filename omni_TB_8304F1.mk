@@ -19,7 +19,7 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := TB-8304F1
-PRODUCT_NAME := omni_TB-8304F1
+PRODUCT_NAME := omni_TB_8304F1
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo TB-8304F1
 PRODUCT_MANUFACTURER := lenovo
