@@ -5,4 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/lenovo/TB-8304F1
+LOCAL_PATH := device/lenovo/TB_8304F1

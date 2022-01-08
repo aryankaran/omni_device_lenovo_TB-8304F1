@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/lenovo/TB-8304F1
+DEVICE_PATH := device/lenovo/TB_8304F1
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -54,8 +54,8 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/lenovo/TB-8304F1
-TARGET_KERNEL_CONFIG := TB-8304F1_defconfig
+# TARGET_KERNEL_SOURCE := kernel/lenovo/TB_8304F1
+# TARGET_KERNEL_CONFIG := TB-8304F1_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := mt8163
