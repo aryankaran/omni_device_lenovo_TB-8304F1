@@ -94,6 +94,9 @@ TARGET_USES_LOGD := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_OLD := true
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
 TW_CRYPTO_USE_SYSTEM_VOLD := true
 
 TW_IGNORE_MISC_WIPE_DATA := true
