@@ -33,12 +33,12 @@ TARGET_BOOTLOADER_BOARD_NAME := 1582767619
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
-#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216 # This is the maximum known partition size, but it can be higher, so we just omit it
+# BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216 # This is the maximum known partition size, but it can be higher, so we just omit it
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
+# TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Kernel
@@ -67,7 +67,23 @@ PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
+TW_EXTRA_LANGUAGES := false
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+
+TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
+TW_EXCLUDE_SUPERSU := true
+TW_DEFAULT_EXTERNAL_STORAGE := true
+TW_DEFAULT_BRIGHTNESS := 90
+TW_MTP_DEVICE := TAB_E8
+
+# Logcat
+TWRP_INCLUDE_LOGCAT := true
+
+# crypto
+TW_INCLUDE_CRYPTO := true
+TW_CRYPTO_USE_SYSTEM_VOLD := true
+
+TW_IGNORE_MISC_WIPE_DATA := true
+TW_EXCLUDE_ENCRYPTED_BACKUPS := false
