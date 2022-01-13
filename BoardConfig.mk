@@ -88,7 +88,7 @@ TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_EXCLUDE_SUPERSU := true
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_DEFAULT_BRIGHTNESS := 90
-TW_MTP_DEVICE := TAB_E8
+# TW_MTP_DEVICE := TAB_E8
 
 # Logcat
 TWRP_INCLUDE_LOGCAT := true
