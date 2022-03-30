@@ -21,5 +21,5 @@ $(call inherit-product-if-exists, vendor/pb/config/common.mk)
 PRODUCT_DEVICE := TB_8304F1
 PRODUCT_NAME := omni_TB_8304F1
 PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := Lenovo Tab E8
+PRODUCT_MODEL := Tab E8
 PRODUCT_MANUFACTURER := lenovo
