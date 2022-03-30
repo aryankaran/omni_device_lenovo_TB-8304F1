@@ -104,5 +104,10 @@ TW_EXCLUDE_ENCRYPTED_BACKUPS := false
 # Disable haptics
 TW_NO_HAPTICS := true
 
--include $(DEVICE_PATH)/BoardConfigSHRP.mk
+# exFAT FS Support
+TW_INCLUDE_FUSE_EXFAT := true
 
+# NTFS Support
+TW_INCLUDE_FUSE_NTFS := true
+
+-include $(DEVICE_PATH)/BoardConfigSHRP.mk
