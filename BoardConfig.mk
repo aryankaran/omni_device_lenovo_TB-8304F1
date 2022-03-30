@@ -102,3 +102,6 @@ TW_EXCLUDE_ENCRYPTED_BACKUPS := false
 
 # Disable haptics
 TW_NO_HAPTICS := true
+
+-include $(LOCAL_PATH)/BoardConfigSHRP.mk
+
