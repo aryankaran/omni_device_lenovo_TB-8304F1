@@ -18,5 +18,5 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 PRODUCT_DEVICE := TB_8304F1
 PRODUCT_NAME := omni_TB_8304F1
 PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := Lenovo TB-8304F1
+PRODUCT_MODEL := Lenovo Tab E8
 PRODUCT_MANUFACTURER := lenovo

@@ -21,6 +21,7 @@ export FOX_USE_GREP_BINARY=1
 export FOX_USE_XZ_UTILS=1
 export FOX_REPLACE_TOOLBOX_GETPROP=1
 export OF_NO_RELOAD_AFTER_DECRYPTION=1
+export FOX_DELETE_AROMAFM=1
 
 # Stable version release
 export FOX_BUILD_TYPE="Stable"
