@@ -41,3 +41,6 @@ export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/soc/11230000.mmc/by-n
 export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/platform/soc/11230000.mmc/by-name/system"
 export FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/soc/11230000.mmc/by-name/boot"
 
+
+# Pitch black Official
+export PB_OFFICIAL=true
