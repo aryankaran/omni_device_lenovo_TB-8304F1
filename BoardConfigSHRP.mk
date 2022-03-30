@@ -32,5 +32,5 @@ INC_IN_REC_ADDON_3 := true
 # Addon - Force Encryption (remove force encryption from your device)
 INC_IN_REC_ADDON_4 := true
 
-INC_IN_REC_MAGISK := true
+# INC_IN_REC_MAGISK := true
 
