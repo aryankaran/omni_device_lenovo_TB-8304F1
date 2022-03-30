@@ -1,10 +1,3 @@
-#
-# Copyright (C) 2021 The Android Open Source Project
-# Copyright (C) 2021 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-
 DEVICE_PATH := device/lenovo/TB_8304F1
 
 # For building with minimal manifest
@@ -26,7 +19,7 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := TB_8304F1
+TARGET_OTA_ASSERT_DEVICE := TB_8304F1,E8
 
 # Bootloader"
 TARGET_BOOTLOADER_BOARD_NAME := mt8163
