@@ -99,3 +99,6 @@ TW_CRYPTO_USE_SYSTEM_VOLD := true
 
 TW_IGNORE_MISC_WIPE_DATA := true
 TW_EXCLUDE_ENCRYPTED_BACKUPS := false
+
+# Disable haptics
+TW_NO_HAPTICS := true
