@@ -2,6 +2,7 @@ SHRP_DEVICE_CODE := TB_8304F1
 SHRP_PATH := device/lenovo/$(SHRP_DEVICE_CODE)
 SHRP_MAINTAINER := "Aryan Karan"
 SHRP_REC_TYPE := Normal
+SHRP_OFFICIAL := true
 SHRP_DEVICE_TYPE := A_Only
 SHRP_REC := "/dev/block/platform/soc/11230000.mmc/by-name/recovery"
 SHRP_EXTERNAL := /external_sd

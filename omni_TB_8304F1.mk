@@ -7,8 +7,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # $(call inherit-product, device/lenovo/TB_8304F1/device.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product-if-exists, vendor/omni/config/common.mk)
+$(call inherit-product-if-exists, vendor/omni/config/gsm.mk)
+
+# Inherit some common Pitchblack stuff.
+$(call inherit-product-if-exists, vendor/pb/config/common.mk)
 
 # Time Zone data for recovery
 #PRODUCT_COPY_FILES += \
