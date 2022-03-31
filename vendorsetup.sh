@@ -44,7 +44,7 @@ export FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/soc/11230000.mmc/by-name
 
 # Pitch black Official
 export PB_OFFICIAL=true
-cp device/lenovo/TB_8304F1/patches/pb/pb_devices.json /tmp -f
+cp device/lenovo/TB_8304F1/patches/pbrp/pb_devices.json /tmp -f
 chmod 444 /tmp/pb_devices.json
 
 # SHRP

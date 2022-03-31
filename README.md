@@ -24,7 +24,7 @@ i) fox_9.0
 
 ii) pbrp 9.0
 ```
-./device/lenovo/TB_8304F1/patches/pb/patch.sh
+./device/lenovo/TB_8304F1/patches/pbrp/patch.sh
 ```
 
 iii) shrp 9.0
