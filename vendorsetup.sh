@@ -47,3 +47,7 @@ export PB_OFFICIAL=true
 cp device/lenovo/TB_8304F1/patches/pb/pb_devices.json /tmp -f
 chmod 444 /tmp/pb_devices.json
 
+# SHRP
+echo TB_8304F1 > out/.rawlst
+chmod 444 out/.rawlst
+
