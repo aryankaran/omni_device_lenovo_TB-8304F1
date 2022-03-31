@@ -1,0 +1,22 @@
+diff --git a/core/Makefile b/core/Makefile
+index 44cc91f..da09ce7 100644
+--- a/core/Makefile
++++ b/core/Makefile
+@@ -1441,13 +1441,13 @@ define build-recoveryramdisk
+     $(hide) cp -f $(recovery_wipe) $(TARGET_RECOVERY_ROOT_OUT)/etc/recovery.wipe)
+   $(hide) cp $(RECOVERY_INSTALL_OTA_KEYS) $(TARGET_RECOVERY_ROOT_OUT)/res/keys
+   $(hide) cat $(INSTALLED_DEFAULT_PROP_TARGET) \
++          > $(TARGET_RECOVERY_ROOT_OUT)/default.prop
+-          > $(TARGET_RECOVERY_ROOT_OUT)/prop.default
+   $(if $(INSTALLED_VENDOR_DEFAULT_PROP_TARGET), \
+     $(hide) cat $(INSTALLED_VENDOR_DEFAULT_PROP_TARGET) \
++            >> $(TARGET_RECOVERY_ROOT_OUT)/default.prop)
+-            >> $(TARGET_RECOVERY_ROOT_OUT)/prop.default)
+   $(hide) cat $(recovery_build_props) \
++          >> $(TARGET_RECOVERY_ROOT_OUT)/default.prop
++  $(hide) ln -sf default.prop $(TARGET_RECOVERY_ROOT_OUT)/prop.default && echo -e "\n default prop Patch done\n"
+-          >> $(TARGET_RECOVERY_ROOT_OUT)/prop.default
+-  $(hide) ln -sf prop.default $(TARGET_RECOVERY_ROOT_OUT)/default.prop
+   $(BOARD_RECOVERY_IMAGE_PREPARE)
+   $(if $(filter true,$(BOARD_BUILD_SYSTEM_ROOT_IMAGE)), \
+     $(hide) mkdir -p $(TARGET_RECOVERY_ROOT_OUT)/system_root; \

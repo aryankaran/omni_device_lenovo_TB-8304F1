@@ -1,0 +1,2 @@
+~/Fox/system/core
+~/Fox/build/core
