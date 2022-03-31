@@ -19,10 +19,16 @@ git clone https://github.com/TeamWin/external_magisk-prebuilt -b android-9.0 ext
 # Patches
 i) fox_9.0
 ```
-./device/lenovo/TB_8304F1/patches/fox_9.0/apply.sh
+./device/lenovo/TB_8304F1/patches/fox_9.0/patch.sh
 ```
 
 ii) pbrp 9.0
 ```
 ./device/lenovo/TB_8304F1/patches/pb/patch.sh
 ```
+
+iii) shrp 9.0
+```
+./device/lenovo/TB_8304F1/patches/shrp/patch.sh
+```
+

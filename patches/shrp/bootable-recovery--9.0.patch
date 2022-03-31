@@ -1,0 +1,66 @@
+diff --git a/data.cpp b/data.cpp
+index 914a055..8b37602 100755
+--- a/data.cpp
++++ b/data.cpp
+@@ -694,7 +694,7 @@ void DataManager::SetDefaultValues()
+ 	string Lun_File_str = CUSTOM_LUN_FILE;
+ 	size_t found = Lun_File_str.find("%");
+ 	if (found != string::npos) {
+-		sprintf(lun_file, CUSTOM_LUN_FILE, 0);
++		sprintf(lun_file, CUSTOM_LUN_FILE);
+ 		Lun_File_str = lun_file;
+ 	}
+ 	if (!TWFunc::Path_Exists(Lun_File_str)) {
+@@ -1191,4 +1191,4 @@ void DataManager::LoadTWRPFolderInfo(void)
+ 	string mainPath = GetCurrentStoragePath();
+ 	SetValue(TW_RECOVERY_FOLDER_VAR, TWFunc::Check_For_TwrpFolder());
+ 	mBackingFile = mainPath + GetStrValue(TW_RECOVERY_FOLDER_VAR) + '/' + TW_SETTINGS_FILE;
+-}
+\ No newline at end of file
++}
+diff --git a/partitionmanager.cpp b/partitionmanager.cpp
+index e58e8ff..bc333a9 100755
+--- a/partitionmanager.cpp
++++ b/partitionmanager.cpp
+@@ -2020,14 +2020,14 @@ int TWPartitionManager::usb_storage_enable(void) {
+ 	string Lun_File_str = CUSTOM_LUN_FILE;
+ 	size_t found = Lun_File_str.find("%");
+ 	if (found != string::npos) {
+-		sprintf(lun_file, CUSTOM_LUN_FILE, 1);
++		sprintf(lun_file, CUSTOM_LUN_FILE);
+ 		if (TWFunc::Path_Exists(lun_file))
+ 			has_multiple_lun = true;
+ 	}
+ 	mtp_was_enabled = TWFunc::Toggle_MTP(false); // Must disable MTP for USB Storage
+ 	if (!has_multiple_lun) {
+ 		LOGINFO("Device doesn't have multiple lun files, mount current storage\n");
+-		sprintf(lun_file, CUSTOM_LUN_FILE, 0);
++		sprintf(lun_file, CUSTOM_LUN_FILE);
+ 		if (TWFunc::Get_Root_Path(DataManager::GetCurrentStoragePath()) == "/data") {
+ 			TWPartition* Mount = Find_Next_Storage("", true);
+ 			if (Mount) {
+@@ -2045,13 +2045,13 @@ int TWPartitionManager::usb_storage_enable(void) {
+ 		LOGINFO("Device has multiple lun files\n");
+ 		TWPartition* Mount1;
+ 		TWPartition* Mount2;
+-		sprintf(lun_file, CUSTOM_LUN_FILE, 0);
++		sprintf(lun_file, CUSTOM_LUN_FILE);
+ 		Mount1 = Find_Next_Storage("", true);
+ 		if (Mount1) {
+ 			if (!Open_Lun_File(Mount1->Mount_Point, lun_file)) {
+ 				goto error_handle;
+ 			}
+-			sprintf(lun_file, CUSTOM_LUN_FILE, 1);
++			sprintf(lun_file, CUSTOM_LUN_FILE);
+ 			Mount2 = Find_Next_Storage(Mount1->Mount_Point, true);
+ 			if (Mount2 && Mount2->Mount_Point != Mount1->Mount_Point) {
+ 				Open_Lun_File(Mount2->Mount_Point, lun_file);
+@@ -2081,7 +2081,7 @@ int TWPartitionManager::usb_storage_disable(void) {
+ 	string str = ch;
+ 
+ 	for (index=0; index<2; index++) {
+-		sprintf(lun_file, CUSTOM_LUN_FILE, index);
++		sprintf(lun_file, CUSTOM_LUN_FILE);
+ 		ret = TWFunc::write_to_file(lun_file, str);
+ 		if (ret < 0) {
+ 			break;
