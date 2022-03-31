@@ -1,2 +1,2 @@
 ~/Fox/system/core
-~/Fox/build/core
+~/Fox/build/make
