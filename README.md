@@ -15,3 +15,14 @@ iii) Building with fox 9.0 branch requires magisk prebuilt and theme repo to be 
 git clone https://gitlab.com/OrangeFox/misc/Theme bootable/recovery/gui/theme;\
 git clone https://github.com/TeamWin/external_magisk-prebuilt -b android-9.0 external/magisk-prebuilt
 ```
+
+# Patches
+i) fox_9.0
+```
+./device/lenovo/TB_8304F1/patches/fox_9.0/apply.sh
+```
+
+ii) pbrp 9.0
+```
+./device/lenovo/TB_8304F1/patches/pb/patch.sh
+```
