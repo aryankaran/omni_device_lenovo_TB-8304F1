@@ -1,5 +1,5 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_TB~8304F1.mk
+    $(LOCAL_DIR)/omni_TB•8304F1.mk
 
 COMMON_LUNCH_CHOICES := \
     omni_TB~8304F1-user \
