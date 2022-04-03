@@ -1,5 +1,5 @@
-add_lunch_combo omni_TB~8304F1-eng
-add_lunch_combo omni_TB~8304F1-userdebug
+add_lunch_combo omni_TB8304F1-eng
+add_lunch_combo omni_TB8304F1-userdebug
 
 export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 export OF_QUICK_BACKUP_LIST="/data;/boot;/system;"

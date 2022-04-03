@@ -19,7 +19,7 @@ $(call inherit-product-if-exists, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := TB~8304F1
-PRODUCT_NAME := omni_TB~8304F1
+PRODUCT_NAME := omni_TB8304F1
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Tab E8/TB-8304F1
 PRODUCT_MANUFACTURER := lenovo
