@@ -48,5 +48,5 @@ cp device/lenovo/TB-8304F1/patches/pbrp/pb_devices.json /tmp -f
 chmod 444 /tmp/pb_devices.json
 
 # SHRP
-echo TB-8304F1 > out/.rawlst
-chmod 444 out/.rawlst
+echo TB-8304F1 > out/.rawlst 2>/dev/null || true
+chmod 444 out/.rawlst 2>/dev/null || true
