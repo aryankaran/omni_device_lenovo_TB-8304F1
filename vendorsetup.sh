@@ -1,5 +1,5 @@
-add_lunch_combo omni_TB8304F1-eng
-add_lunch_combo omni_TB8304F1-userdebug
+add_lunch_combo omni_TabE8-eng
+add_lunch_combo omni_TabE8-userdebug
 
 export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 export OF_QUICK_BACKUP_LIST="/data;/boot;/system;"
@@ -26,9 +26,9 @@ export FOX_DELETE_AROMAFM=1
 # Stable version release
 export FOX_BUILD_TYPE="Stable"
 export FOX_DEVICE_MODEL="Lenovo Tab E8"
-export OF_TARGET_DEVICES="TB~8304F1"
-export OF_TARGET_DEVICES_ALT="TB_8304F1"
-export FOX_DEVICE="TB~8304F1"
+export OF_TARGET_DEVICES="TabE8"
+export OF_TARGET_DEVICES_ALT="TB-8304F1"
+export FOX_DEVICE="TB-8304F1"
 export OF_FLASHLIGHT_ENABLE=0
 export OF_DEVICE_WITHOUT_PERSIST=1
 export FOX_ENABLE_APP_MANAGER=1
@@ -44,10 +44,9 @@ export FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/soc/11230000.mmc/by-name
 
 # Pitch black Official
 export PB_OFFICIAL=true
-cp device/lenovo/TB~8304F1/patches/pbrp/pb_devices.json /tmp -f
+cp device/lenovo/TB-8304F1/patches/pbrp/pb_devices.json /tmp -f
 chmod 444 /tmp/pb_devices.json
 
 # SHRP
-echo TB~8304F1 > out/.rawlst
+echo TB-8304F1 > out/.rawlst
 chmod 444 out/.rawlst
-

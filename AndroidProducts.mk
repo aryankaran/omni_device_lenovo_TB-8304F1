@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_TB8304F1.mk
+    $(LOCAL_DIR)/omni_TabE8.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_TB8304F1-user \
-    omni_TB8304F1-userdebug \
-    omni_TB8304F1-eng
+    omni_TabE8-user \
+    omni_TabE8-userdebug \
+    omni_TabE8-eng
