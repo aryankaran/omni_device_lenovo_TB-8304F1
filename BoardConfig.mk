@@ -111,3 +111,4 @@ TW_INCLUDE_FUSE_EXFAT := true
 TW_INCLUDE_FUSE_NTFS := true
 
 -include $(DEVICE_PATH)/BoardConfigSHRP.mk
+-include $(DEVICE_PATH)/BoardConfigPBRP.mk
